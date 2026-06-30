@@ -34,6 +34,12 @@ The goal is to reproduce the LRFIO result path cleanly, without extra experiment
 
 The notebook name may differ slightly depending on the final repository version.
 
+## Pre-run notebook outputs
+
+The notebook is committed with the main cells already executed. This allows readers to inspect the printed outputs, tables, and figures directly in GitHub or Jupyter without first downloading the data or rerunning the full experiment.
+
+Rerunning the notebook still requires access to the prepared HEC-RAS native-cell inputs described below. The pre-run outputs are included for transparency and convenient review of the reproduced LRFIO result path.
+
 ## Environment
 
 The notebook was written for Python 3 and can be run either locally or in Google Colab.
@@ -50,7 +56,7 @@ To run in Colab:
    ```text
    Runtime → Change runtime type → Hardware accelerator → GPU
    ```
-   
+
 3. Upload or mount the required prepared data files.
 4. Update the notebook data path, for example:
 
