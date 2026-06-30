@@ -50,15 +50,9 @@ To run in Colab:
    ```text
    Runtime → Change runtime type → Hardware accelerator → GPU
    ```
-
-3. Install any missing dependencies in the first setup cell:
-
-   ```python
-   !pip install numpy pandas scipy scikit-learn matplotlib
-   ```
-
-4. Upload or mount the required prepared data files.
-5. Update the notebook data path, for example:
+   
+3. Upload or mount the required prepared data files.
+4. Update the notebook data path, for example:
 
    ```python
    DATA_DIR = "/content/path/to/prepared/lrfio/data"
