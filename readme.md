@@ -12,9 +12,7 @@ The notebook demonstrates the main LRFIO pipeline:
 
 1. Load native-cell HEC-RAS water-surface elevation data.
 2. Form the current WSE increment,  
-   $$
-   \Delta W_t = W_t - W_{t-1}
-   $$
+   $$\Delta W_t = W_t - W_{t-1}$$
 3. Fit/select the retained LRFIO response case:
    - `H0`: persistence
    - `H1`: global calibrated inertia
