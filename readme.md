@@ -99,9 +99,9 @@ jupyter lab
 
 ## Data
 
-This repository is intended for the reproduction code. Large HEC-RAS project files and derived native-cell arrays are not tracked here unless explicitly added.
+This repository contains the reproduction notebook and source code only. Large HEC-RAS project files, simulation outputs, and prepared native-cell arrays are not tracked in this repository unless explicitly added.
 
-To run the notebook, place the required prepared inputs locally and update the data path near the top of the notebook, for example:
+To rerun the notebook, place the required prepared inputs locally and update the data path near the top of the notebook, for example:
 
 ```python
 DATA_DIR = "path/to/prepared/lrfio/data"
@@ -114,7 +114,17 @@ The paper evaluates LRFIO on four HEC-RAS 2D benchmark datasets:
 - Lower San Saba River
 - Tuttle Creek / Big Blue / Kansas River
 
-Some source datasets may have separate access or redistribution terms. The notebook assumes the user has access to the required prepared inputs.
+### Public dataset sources
+
+Three of the four benchmark datasets are publicly available through Dryad:
+
+- Upper San Saba River: https://datadryad.org/dataset/doi:10.5061/dryad.k3j9kd5gr
+- Lower San Saba River: https://datadryad.org/dataset/doi:10.5061/dryad.44j0zpcpq
+- Tuttle Creek / Big Blue / Kansas River: https://datadryad.org/dataset/doi:10.5061/dryad.pc866t1tt
+
+The Beaver Bayou dataset is not publicly redistributed with this repository. It was privately provided for the study and may require separate permission from the data provider.
+
+The committed notebook includes pre-run outputs so that readers can inspect the reproduced LRFIO workflow without immediately downloading or preparing the datasets. Rerunning the notebook requires access to the appropriate HEC-RAS project files or prepared native-cell inputs.
 
 ## Expected result
 
