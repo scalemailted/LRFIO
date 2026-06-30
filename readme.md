@@ -36,7 +36,46 @@ The notebook name may differ slightly depending on the final repository version.
 
 ## Environment
 
-The notebook was written for Python 3. A minimal local setup is:
+The notebook was written for Python 3 and can be run either locally or in Google Colab.
+
+### Option 1: Google Colab
+
+The experiments were originally run in **Google Colab**, which provides convenient access to GPU-backed compute when available.
+
+To run in Colab:
+
+1. Upload the notebook to Google Colab.
+2. Enable GPU acceleration if needed:
+
+   ```text
+   Runtime → Change runtime type → Hardware accelerator → GPU
+   ```
+
+3. Install any missing dependencies in the first setup cell:
+
+   ```python
+   !pip install numpy pandas scipy scikit-learn matplotlib
+   ```
+
+4. Upload or mount the required prepared data files.
+5. Update the notebook data path, for example:
+
+   ```python
+   DATA_DIR = "/content/path/to/prepared/lrfio/data"
+   ```
+
+If using Google Drive for data storage, mount Drive in Colab:
+
+```python
+from google.colab import drive
+drive.mount("/content/drive")
+```
+
+Then set `DATA_DIR` to the appropriate folder inside `/content/drive/MyDrive/`.
+
+### Option 2: Local Python environment
+
+A minimal local setup is:
 
 ```bash
 python3 -m venv .venv
